@@ -1,11 +1,26 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "node",
-    "baseUrl": "src",
-    "outDir": "dist",
+    "target": "es6",
+    "module": "commonjs",
+    "pretty": true,
     "sourceMap": true,
-    "noImplicitAny": true
-  },
-  "include": ["src/**/*"]
+    "outDir": "dist",
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noImplicitThis": false,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "paths": {}
+  }
 }
