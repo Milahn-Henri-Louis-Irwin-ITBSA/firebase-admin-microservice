@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "nodejs"
+        nodejs "nodejs" // Use the same name you configured in Jenkins Global Tool Configuration
     }
 
     stages {
