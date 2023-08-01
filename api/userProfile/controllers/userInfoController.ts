@@ -44,4 +44,8 @@ export class UserInfoController {
       return Promise.reject(error);
     }
   }
+  @Get('/ping')
+  public async ping(): Promise<any> {
+    return { message: 'pong' };
+  }
 }
