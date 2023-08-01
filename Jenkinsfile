@@ -6,6 +6,12 @@ pipeline {
     }
 
     stages {
+        stage('Example') {
+            steps {
+                sh 'npm config ls'
+            }
+        }
+
         stage('Checkout') {
             steps {
                 git(url: 'https://github.com/Milahn-Henri-Louis-Irwin-ITBSA/firebase-admin-microservice', branch: 'main')
@@ -14,13 +20,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'yarn install'
+                sh 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'yarn prod'
+                sh 'npm run prod'
             }
         }
 
